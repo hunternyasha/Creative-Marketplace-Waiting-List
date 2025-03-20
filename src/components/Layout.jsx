@@ -68,7 +68,7 @@ const Layout = () => {
         </footer>
       ) : (
         isBuyerOrSupplierPage && (
-          <footer className="bg-dark text-white text-center position-relative layout-footer">
+          <footer className="text-white text-center position-relative layout-footer">
             <div className="step-indicator-wrapper">
               {Array.from({ length: visibleSteps }, (_, index) => {
                 const stepNumber = index + 1;
