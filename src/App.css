@@ -1,0 +1,524 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;600;700;900&display=swap');
+
+/* General Layout and Base Styles */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Lato', sans-serif;
+  background: #f4f4f4;
+  min-height: 100vh;
+}
+
+
+.container {
+  background: #fff;
+  border-radius: 10px;
+  overflow: hidden;
+  margin: 20px auto;
+}
+
+.content {
+  padding: 20px;
+  text-align: center;
+}
+
+/* Header Section */
+.layout-header {
+  position: relative;
+}
+
+/* Links - Header Logo */
+.logo.nav-link {
+  font-size: 24px;
+  /* Larger for prominence in header */
+  font-weight: 700;
+  /* Bold */
+  color: #3498db;
+  text-decoration: none;
+}
+
+.back-btn {
+  position: absolute;
+  left: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: #ccc;
+  border-color: #ccc;
+  color: #000;
+  padding: 5px 10px;
+  font-size: 16px;
+  border-radius: 5px;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Home Page Section */
+/* Main Headline (H1) - Home Page Title */
+.home-title {
+  font-size: 40px;
+  /* Within 32px - 48px range */
+  font-weight: 700;
+  /* Bold */
+  color: #3498db;
+  margin-bottom: 20px;
+}
+
+/* Subheadline (H2) - Home Page Subtitle */
+.home-subtitle {
+  font-size: 24px;
+  /* Within 24px - 32px range */
+  font-weight: 600;
+  /* Semi-bold */
+  color: #333;
+  margin: 10px 0;
+}
+
+/* Body Text - Home Page Description */
+.home-text {
+  font-size: 16px;
+  /* Within 14px - 18px range */
+  font-weight: 400;
+  /* Regular */
+  color: #333;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+/* Button Text - Home Page CTA Buttons */
+.home-button {
+  font-size: 18px;
+  /* Within 16px - 18px range */
+  font-weight: 600;
+  /* Bold */
+  background-color: #3498db;
+  border-color: #3498db;
+  padding: 12px 24px;
+  color: #fff;
+}
+
+.content img {
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 20px;
+}
+
+/* Creative Seeker Form Questionnaire Section */
+/* Section Titles (H3) - Creative Seeker Questions */
+.buyer-title {
+  font-size: 24px;
+  /* Within 20px - 24px range */
+  font-weight: 600;
+  /* Semi-bold */
+  color: #333;
+  margin: 0 0 20px;
+}
+
+/* Form Section - Creative Seeker Initial Form */
+.buyer-form {
+  padding: 20px;
+  border-radius: 10px;
+  color: #fff;
+  background-color: #3498db;
+}
+
+/* Form Labels - Creative Seeker Input Placeholders */
+.form-control {
+  display: block;
+  width: 100%;
+  padding: 0.375rem 0.75rem;
+  font-size: 16px;
+  /* Within 16px - 18px range */
+  font-weight: 400;
+  /* Regular */
+  color: #495057;
+  background-color: #e0e0e0;
+  border: none;
+  border-radius: 0.25rem;
+  margin-bottom: 10px;
+}
+
+.form-control:focus {
+  border-color: #3498db;
+  outline: 0;
+  box-shadow: 0 0 0 0.2rem rgba(52, 152, 219, 0.25);
+}
+
+.input-group {
+  display: flex;
+  align-items: center;
+}
+
+.country-select {
+  max-width: 100px;
+  border-radius: 5px 0 0 5px;
+}
+
+.phone-input {
+  border-radius: 0 5px 5px 0;
+  flex: 1;
+}
+
+/* Question Text in Forms - Creative Seeker Subheader and Questions */
+.form-text {
+  font-size: 16px;
+  /* Within 16px - 18px range */
+  font-weight: 400;
+  /* Regular */
+  color: #fff;
+  margin-bottom: 20px;
+}
+
+.question-text {
+  font-size: 16px;
+  /* Within 16px - 18px range */
+  font-weight: 400;
+  /* Regular */
+  color: #666;
+  margin-bottom: 20px;
+}
+
+/* Button Text - Creative Seeker Form Submission */
+.form-button {
+  font-size: 16px;
+  /* Within 16px - 18px range */
+  font-weight: 600;
+  /* Bold */
+  background-color: #000;
+  border-color: #000;
+  color: #fff;
+  padding: 12px 20px;
+  /* Adjusted padding for better height */
+  width: 100%;
+  border-radius: 5px;
+  margin-top: 15px;
+  /* Added spacing above the button to match design */
+}
+
+/* Button Text - Question Options */
+.option-button {
+  font-size: 16px;
+  /* Within 16px - 18px range */
+  font-weight: 600;
+  /* Bold */
+  background-color: #f39c12;
+  /* Orange background */
+  border-color: #f39c12;
+  color: #fff;
+  padding: 12px 20px;
+  /* Adjusted padding for better height */
+  width: 100%;
+  margin-bottom: 15px;
+  /* Increased spacing between buttons */
+  border-radius: 5px;
+}
+
+/* Special styling for "Other" button */
+.option-button.other {
+  background-color: #fff;
+  /* White background */
+  border: 2px solid #f39c12;
+  /* Orange border */
+  color: #000;
+  /* Black text */
+}
+
+/* Media Creative Form Questionnaire Section */
+/* Section Titles (H3) - Media Creative Questions */
+.supplier-title {
+  font-size: 24px;
+  /* Within 20px - 24px range */
+  font-weight: 600;
+  /* Semi-bold */
+  color: #333;
+  margin: 0 0 20px;
+}
+
+/* Form Section - Media Creative Initial Form */
+.supplier-form {
+  padding: 20px;
+  border-radius: 10px;
+  color: #fff;
+  background-color: #3498db;
+}
+
+.supplier-image {
+  max-width: 150px;
+  height: auto;
+  margin-bottom: 20px#3498db
+}
+
+.question-step {
+  text-align: center;
+}
+
+.question-error {
+  color: #666;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+/* Footer Section */
+/* Footnote or Caption Text - Footer and Progress */
+.form-subtext {
+  font-size: 14px;
+  /* Within 12px - 14px range */
+  font-weight: 300;
+  /* Light */
+  color: #fff;
+  margin-bottom: 20px;
+}
+
+.footer-text {
+  font-size: 14px;
+  /* Within 12px - 14px range */
+  font-weight: 300;
+  /* Light */
+  color: #fff;
+}
+
+.progress-text {
+  font-size: 14px;
+  /* Within 12px - 14px range */
+  font-weight: 300;
+  /* Light */
+  color: #fff;
+  text-align: center;
+  margin-top: 8px;
+}
+
+.layout-footer {
+  background-color: #000;
+  margin-top: auto;
+}
+
+.step-indicator-wrapper {
+  padding: 10px 0;
+  background-color: #000;
+  border-radius: 5px;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.step-indicator {
+  height: 10px;
+  border: 1px solid #fff;
+  transition: background-color 0.3s ease-in-out;
+  width: calc(100% / 6);
+  margin: 0 1px;
+  /* Default for buyer */
+}
+
+.supplier-content .step-indicator {
+  width: calc(100% / 7);
+  /* For supplier */
+}
+
+.step-indicator.active {
+  background-color: #3498db;
+  border: none;
+}
+
+/* Thank You Page Section */
+/* Main Headline (H1) - Thank You Title */
+.thank-you-title {
+  font-size: 32px;
+  /* Within 32px - 48px range */
+  font-weight: 700;
+  /* Bold */
+  color: #333;
+  margin: 20px 0;
+}
+
+/* Body Text - Thank You Message */
+.thank-you-message {
+  font-size: 16px;
+  /* Within 14px - 18px range */
+  font-weight: 400;
+  /* Regular */
+  color: #333;
+  line-height: 1.5;
+  margin-bottom: 20px;
+}
+
+.thank-you-container {
+  padding: 0;
+  text-align: center;
+  background: #fff;
+  overflow: hidden;
+  margin: 20px auto;
+  max-width: 400px;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.thank-you-header {
+  background-color: #000;
+  color: #fff;
+  padding: 10px;
+  text-align: center;
+}
+
+/* Links - Thank You Logo */
+.logo {
+  font-size: 24px;
+  font-weight: 700;
+  /* Bold */
+  color: #f39c12;
+}
+
+.thank-you-content {
+  padding: 20px;
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.image-container {
+  position: relative;
+  margin-bottom: 20px;
+}
+
+.thank-you-image {
+  max-width: 100%;
+  height: auto;
+  position: relative;
+  z-index: 1;
+}
+
+.orange-rectangle {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 200px;
+  height: 150px;
+  background-color: #3498db;
+  z-index: 0;
+  opacity: 0.7;
+}
+
+.checkmark-container {
+  width: 80px;
+  height: 80px;
+  border: 4px solid #28a745;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 20px auto;
+}
+
+.checkmark {
+  font-size: 40px;
+  color: #28a745;
+}
+
+/* General Button Styles */
+.btn-primary {
+  font-size: 16px;
+  /* Within 16px - 18px range */
+  font-weight: 600;
+  /* Bold */
+  background-color: transparent;
+  /* Allow specific button styles to take over */
+  border-color: transparent;
+  color: #fff;
+  width: 100%;
+  margin: 5px 0;
+}
+
+.btn-lg {
+  padding: 10px 20px;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+
+  .container,
+  .thank-you-container {
+    margin: 10px;
+  }
+
+  .content,
+  .thank-you-content {
+    padding: 10px;
+  }
+
+  /* Home Page */
+  .home-title {
+    font-size: 32px;
+    /* Smaller end of H1 range */
+  }
+
+  .home-subtitle {
+    font-size: 20px;
+    /* Adjusted for mobile */
+  }
+
+  .home-text {
+    font-size: 14px;
+    /* Smaller end of body text range */
+  }
+
+  .home-button {
+    font-size: 16px;
+    padding: 8px 16px;
+  }
+
+  /* Creative Seeker and Media Creative Questionnaires */
+  .buyer-title,
+  .supplier-title {
+    font-size: 20px;
+    /* Smaller end of H3 range */
+  }
+
+  .form-control {
+    font-size: 14px;
+    /* Adjusted for mobile */
+  }
+
+  .form-text,
+  .question-text {
+    font-size: 14px;
+  }
+
+  .form-button,
+  .option-button {
+    font-size: 16px;
+    padding: 8px 20px;
+    /* Adjusted for mobile */
+  }
+
+  .supplier-image {
+    max-width: 120px;
+  }
+
+  /* Thank You Page */
+  .thank-you-title {
+    font-size: 24px;
+  }
+
+  .thank-you-message {
+    font-size: 14px;
+  }
+
+  /* General */
+  .btn-lg {
+    font-size: 16px;
+    padding: 8px 20px;
+  }
+
+  .back-btn {
+    left: 5px;
+    padding: 3px 8px;
+    font-size: 14px;
+  }
+}
